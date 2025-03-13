@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="libreoffice-calc.desktop" score="1" last-seen="1741658626"/>
+    <application id="snap-store_snap-store.desktop" score="52" last-seen="1741698440"/>
+    <application id="org.gnome.Settings.desktop" score="9" last-seen="1741658852"/>
+    <application id="gnome-initial-setup.desktop" score="2" last-seen="1741658507"/>
+    <application id="org.gnome.Nautilus.desktop" score="2" last-seen="1741902449"/>
+    <application id="org.gnome.Terminal.desktop" score="219" last-seen="1741903165"/>
+    <application id="software-properties-gtk.desktop" score="1" last-seen="1741698278"/>
+    <application id="firefox_firefox.desktop" score="144" last-seen="1741903169"/>
+    <application id="yelp.desktop" score="0" last-seen="1741698203"/>
+    <application id="org.gnome.PowerStats.desktop" score="0" last-seen="1741658587"/>
+    <application id="libreoffice-writer.desktop" score="2" last-seen="1741902437"/>
+  </context>
+</application-state>

@@ -1,0 +1,645 @@
+[    49.219] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[    49.219] _XSERVTransMakeAllCOTSServerListeners: server already running
+[    49.220] (--) Log file renamed from "/home/juan-pablo/.local/share/xorg/Xorg.pid-2336.log" to "/home/juan-pablo/.local/share/xorg/Xorg.1.log"
+[    49.221] 
+X.Org X Server 1.21.1.11
+X Protocol Version 11, Revision 0
+[    49.221] Current Operating System: Linux SanchezPC 6.11.0-17-generic #17~24.04.2-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 20 22:48:29 UTC 2 x86_64
+[    49.221] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.11.0-17-generic root=UUID=46fe2355-c5fc-48e5-a7a4-159458a4ffc1 ro quiet splash vt.handoff=7
+[    49.221] xorg-server 2:21.1.12-1ubuntu1.1 (For technical support please see http://www.ubuntu.com/support) 
+[    49.221] Current version of pixman: 0.42.2
+[    49.221] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    49.221] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    49.222] (==) Log file: "/home/juan-pablo/.local/share/xorg/Xorg.1.log", Time: Tue Mar 11 10:00:07 2025
+[    49.222] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    49.223] (==) No Layout section.  Using the first Screen section.
+[    49.223] (==) No screen section available. Using defaults.
+[    49.223] (**) |-->Screen "Default Screen Section" (0)
+[    49.223] (**) |   |-->Monitor "<default monitor>"
+[    49.223] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    49.223] (**) Allowing byte-swapped clients
+[    49.223] (==) Automatically adding devices
+[    49.223] (==) Automatically enabling devices
+[    49.223] (==) Automatically adding GPU devices
+[    49.223] (==) Automatically binding GPU devices
+[    49.223] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    49.223] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    49.223] 	Entry deleted from font path.
+[    49.224] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[    49.224] 	Entry deleted from font path.
+[    49.224] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[    49.224] 	Entry deleted from font path.
+[    49.224] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[    49.224] 	Entry deleted from font path.
+[    49.224] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[    49.224] 	Entry deleted from font path.
+[    49.224] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[    49.224] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    49.224] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    49.224] (II) Loader magic: 0x6269b15f9020
+[    49.224] (II) Module ABI versions:
+[    49.224] 	X.Org ANSI C Emulation: 0.4
+[    49.224] 	X.Org Video Driver: 25.2
+[    49.224] 	X.Org XInput driver : 24.4
+[    49.224] 	X.Org Server Extension : 10.0
+[    49.226] (++) using VT number 2
+
+[    49.230] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_32
+[    49.236] (II) xfree86: Adding drm device (/dev/dri/card1)
+[    49.236] (II) Platform probe for /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0/drm/card1
+[    49.238] (II) systemd-logind: got fd for /dev/dri/card1 226:1 fd 15 paused 0
+[    49.240] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    49.240] (II) Platform probe for /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0/simple-framebuffer.0/drm/card0
+[    49.242] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 16 paused 0
+[    49.246] (**) OutputClass "nvidia" ModulePath extended to "/usr/lib/x86_64-linux-gnu/nvidia/xorg,/usr/lib/xorg/modules"
+[    49.250] (--) PCI:*(1@0:0:0) 10de:2184:1458:3fc8 rev 161, Mem @ 0xf6000000/16777216, 0xe0000000/268435456, 0xf0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/131072
+[    49.250] (II) LoadModule: "glx"
+[    49.250] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    49.253] (II) Module glx: vendor="X.Org Foundation"
+[    49.253] 	compiled for 1.21.1.11, module version = 1.0.0
+[    49.253] 	ABI class: X.Org Server Extension, version 10.0
+[    49.765] (II) Applying OutputClass "nvidia" to /dev/dri/card1
+[    49.765] 	loading driver: nvidia
+[    50.915] (==) Matched nouveau as autoconfigured driver 0
+[    50.915] (==) Matched nvidia as autoconfigured driver 1
+[    50.915] (==) Matched modesetting as autoconfigured driver 2
+[    50.915] (==) Matched fbdev as autoconfigured driver 3
+[    50.915] (==) Matched vesa as autoconfigured driver 4
+[    50.915] (==) Assigned the driver to the xf86ConfigLayout
+[    50.915] (II) LoadModule: "nouveau"
+[    50.915] (II) Loading /usr/lib/xorg/modules/drivers/nouveau_drv.so
+[    50.915] (II) Module nouveau: vendor="X.Org Foundation"
+[    50.915] 	compiled for 1.21.1.3, module version = 1.0.17
+[    50.915] 	Module class: X.Org Video Driver
+[    50.915] 	ABI class: X.Org Video Driver, version 25.2
+[    50.915] (II) LoadModule: "nvidia"
+[    50.915] (II) Loading /usr/lib/x86_64-linux-gnu/nvidia/xorg/nvidia_drv.so
+[    50.916] (II) Module nvidia: vendor="NVIDIA Corporation"
+[    50.916] 	compiled for 1.6.99.901, module version = 1.0.0
+[    50.916] 	Module class: X.Org Video Driver
+[    50.916] (II) LoadModule: "modesetting"
+[    50.916] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    50.916] (II) Module modesetting: vendor="X.Org Foundation"
+[    50.916] 	compiled for 1.21.1.11, module version = 1.21.1
+[    50.916] 	Module class: X.Org Video Driver
+[    50.916] 	ABI class: X.Org Video Driver, version 25.2
+[    50.916] (II) LoadModule: "fbdev"
+[    50.917] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[    50.917] (II) Module fbdev: vendor="X.Org Foundation"
+[    50.917] 	compiled for 1.21.1.11, module version = 0.5.0
+[    50.917] 	Module class: X.Org Video Driver
+[    50.917] 	ABI class: X.Org Video Driver, version 25.2
+[    50.917] (II) LoadModule: "vesa"
+[    50.917] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[    50.917] (II) Module vesa: vendor="X.Org Foundation"
+[    50.917] 	compiled for 1.21.1.7, module version = 2.6.0
+[    50.917] 	Module class: X.Org Video Driver
+[    50.917] 	ABI class: X.Org Video Driver, version 25.2
+[    50.917] (II) NOUVEAU driver Date:   Sat Jan 23 12:24:42 2021 -0500
+[    50.917] (II) NOUVEAU driver for NVIDIA chipset families :
+[    50.917] 	RIVA TNT            (NV04)
+[    50.917] 	RIVA TNT2           (NV05)
+[    50.917] 	GeForce 256         (NV10)
+[    50.917] 	GeForce 2           (NV11, NV15)
+[    50.917] 	GeForce 4MX         (NV17, NV18)
+[    50.917] 	GeForce 3           (NV20)
+[    50.917] 	GeForce 4Ti         (NV25, NV28)
+[    50.917] 	GeForce FX          (NV3x)
+[    50.917] 	GeForce 6           (NV4x)
+[    50.917] 	GeForce 7           (G7x)
+[    50.918] 	GeForce 8           (G8x)
+[    50.918] 	GeForce 9           (G9x)
+[    50.918] 	GeForce GTX 2xx/3xx (GT2xx)
+[    50.918] 	GeForce GTX 4xx/5xx (GFxxx)
+[    50.918] 	GeForce GTX 6xx/7xx (GKxxx)
+[    50.918] 	GeForce GTX 9xx     (GMxxx)
+[    50.918] 	GeForce GTX 10xx    (GPxxx)
+[    50.918] (II) NVIDIA dlloader X Driver  550.120  Fri Sep 13 10:03:17 UTC 2024
+[    50.918] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[    50.918] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    50.918] (II) FBDEV: driver for framebuffer: fbdev
+[    50.918] (II) VESA: driver for VESA chipsets: vesa
+[    50.918] xf86EnableIO: failed to enable I/O ports 0000-03ff (Operation not permitted)
+[    50.918] (EE) [drm] Failed to open DRM device for (null): -22
+[    51.461] (EE) [drm] Failed to open DRM device for pci:0000:01:00.0: -19
+[    51.461] (II) systemd-logind: releasing fd for 226:0
+[    51.462] (II) Loading sub module "fb"
+[    51.462] (II) LoadModule: "fb"
+[    51.462] (II) Module "fb" already built-in
+[    51.462] (II) Loading sub module "wfb"
+[    51.462] (II) LoadModule: "wfb"
+[    51.462] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[    51.463] (II) Module wfb: vendor="X.Org Foundation"
+[    51.463] 	compiled for 1.21.1.11, module version = 1.0.0
+[    51.463] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    51.463] (WW) Falling back to old probe method for modesetting
+[    51.465] (WW) Falling back to old probe method for fbdev
+[    51.465] (II) Loading sub module "fbdevhw"
+[    51.465] (II) LoadModule: "fbdevhw"
+[    51.465] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    51.465] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    51.465] 	compiled for 1.21.1.11, module version = 0.0.2
+[    51.465] 	ABI class: X.Org Video Driver, version 25.2
+[    51.465] (EE) open /dev/fb0: Permission denied
+[    51.465] (EE) [drm] Failed to open DRM device for (null): -2
+[    51.465] (II) systemd-logind: releasing fd for 226:1
+[    51.467] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    51.467] (II) NVIDIA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    51.467] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[    51.467] (==) NVIDIA(0): RGB weight 888
+[    51.467] (==) NVIDIA(0): Default visual is TrueColor
+[    51.467] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[    51.467] (**) NVIDIA(0): Enabling 2D acceleration
+[    51.467] (II) Loading sub module "glxserver_nvidia"
+[    51.468] (II) LoadModule: "glxserver_nvidia"
+[    51.468] (II) Loading /usr/lib/x86_64-linux-gnu/nvidia/xorg/libglxserver_nvidia.so
+[    51.497] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[    51.497] 	compiled for 1.6.99.901, module version = 1.0.0
+[    51.497] 	Module class: X.Org Server Extension
+[    51.497] (II) NVIDIA GLX Module  550.120  Fri Sep 13 10:02:06 UTC 2024
+[    51.497] (II) NVIDIA: The X server supports PRIME Render Offload.
+[    51.498] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:1:0:0
+[    51.498] (--) NVIDIA(0):     DFP-0
+[    51.498] (--) NVIDIA(0):     DFP-1
+[    51.498] (--) NVIDIA(0):     DFP-2 (boot)
+[    51.498] (--) NVIDIA(0):     DFP-3
+[    51.498] (--) NVIDIA(0):     DFP-4
+[    51.498] (--) NVIDIA(0):     DFP-5
+[    51.498] (--) NVIDIA(0):     DFP-6
+[    51.500] (II) NVIDIA(0): NVIDIA GPU NVIDIA GeForce GTX 1660 (TU116-A) at PCI:1:0:0
+[    51.500] (II) NVIDIA(0):     (GPU-0)
+[    51.500] (--) NVIDIA(0): Memory: 6291456 kBytes
+[    51.500] (--) NVIDIA(0): VideoBIOS: 90.16.25.00.4c
+[    51.500] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[    51.500] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    51.500] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[    51.500] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[    51.500] (--) NVIDIA(GPU-0): 
+[    51.500] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    51.501] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    51.501] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    51.501] (--) NVIDIA(GPU-0): 
+[    51.501] (--) NVIDIA(GPU-0): LG Electronics LG ULTRAGEAR (DFP-2): connected
+[    51.501] (--) NVIDIA(GPU-0): LG Electronics LG ULTRAGEAR (DFP-2): Internal DisplayPort
+[    51.501] (--) NVIDIA(GPU-0): LG Electronics LG ULTRAGEAR (DFP-2): 2660.0 MHz maximum pixel clock
+[    51.501] (--) NVIDIA(GPU-0): 
+[    51.503] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    51.503] (--) NVIDIA(GPU-0): DFP-3: Internal TMDS
+[    51.503] (--) NVIDIA(GPU-0): DFP-3: 165.0 MHz maximum pixel clock
+[    51.503] (--) NVIDIA(GPU-0): 
+[    51.503] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    51.503] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    51.503] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    51.503] (--) NVIDIA(GPU-0): 
+[    51.504] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    51.504] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    51.504] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[    51.504] (--) NVIDIA(GPU-0): 
+[    51.504] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    51.504] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    51.504] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    51.504] (--) NVIDIA(GPU-0): 
+[    51.534] (==) NVIDIA(0): 
+[    51.534] (==) NVIDIA(0): No modes were requested; the default mode "nvidia-auto-select"
+[    51.534] (==) NVIDIA(0):     will be used as the requested mode.
+[    51.534] (==) NVIDIA(0): 
+[    51.535] (II) NVIDIA(0): Validated MetaModes:
+[    51.535] (II) NVIDIA(0):     "DFP-2:nvidia-auto-select"
+[    51.535] (II) NVIDIA(0): Virtual screen size determined to be 1920 x 1080
+[    51.570] (--) NVIDIA(0): DPI set to (92, 91); computed from "UseEdidDpi" X config
+[    51.570] (--) NVIDIA(0):     option
+[    51.570] (==) NVIDIA(G0): Depth 24, (==) framebuffer bpp 32
+[    51.570] (==) NVIDIA(G0): RGB weight 888
+[    51.570] (==) NVIDIA(G0): Default visual is TrueColor
+[    51.570] (==) NVIDIA(G0): Using gamma correction (1.0, 1.0, 1.0)
+[    51.570] (II) Applying OutputClass "nvidia" options to /dev/dri/card1
+[    51.570] (**) NVIDIA(G0): Option "AllowEmptyInitialConfiguration"
+[    51.570] (**) NVIDIA(G0): Enabling 2D acceleration
+[    51.570] (II) NVIDIA: The X server supports PRIME Render Offload.
+[    51.570] (EE) NVIDIA(GPU-1): Failed to initialize the NVIDIA graphics device!
+[    51.570] (EE) NVIDIA(G0): Failing initialization of X screen
+[    51.570] (II) UnloadModule: "nvidia"
+[    51.570] (II) UnloadSubModule: "wfb"
+[    51.570] (II) UnloadModule: "modesetting"
+[    51.570] (II) Unloading modesetting
+[    51.570] (II) UnloadModule: "fbdev"
+[    51.570] (II) Unloading fbdev
+[    51.570] (II) UnloadSubModule: "fbdevhw"
+[    51.570] (II) Unloading fbdevhw
+[    51.570] (II) UnloadModule: "vesa"
+[    51.570] (II) Unloading vesa
+[    51.570] (WW) NVIDIA: Failed to bind sideband socket to
+[    51.570] (WW) NVIDIA:     '/var/run/nvidia-xdriver-e360a154' Permission denied
+[    51.570] (EE) NVIDIA(GPU-1): Failed to initialize the NVIDIA graphics device!
+[    51.570] (II) NVIDIA(GPU-1): Deleting GPU-1
+[    51.571] (II) NVIDIA: Reserving 24576.00 MB of virtual memory for indirect memory
+[    51.571] (II) NVIDIA:     access.
+[    51.573] (II) NVIDIA(0): ACPI: failed to connect to the ACPI event daemon; the daemon
+[    51.573] (II) NVIDIA(0):     may not be running or the "AcpidSocketPath" X
+[    51.573] (II) NVIDIA(0):     configuration option may not be set correctly.  When the
+[    51.573] (II) NVIDIA(0):     ACPI event daemon is available, the NVIDIA X driver will
+[    51.573] (II) NVIDIA(0):     try to use it to receive ACPI event notifications.  For
+[    51.573] (II) NVIDIA(0):     details, please see the "ConnectToAcpid" and
+[    51.573] (II) NVIDIA(0):     "AcpidSocketPath" X configuration options in Appendix B: X
+[    51.573] (II) NVIDIA(0):     Config Options in the README.
+[    51.592] (II) NVIDIA(0): Setting mode "DFP-2:nvidia-auto-select"
+[    51.684] (==) NVIDIA(0): Disabling shared memory pixmaps
+[    51.684] (==) NVIDIA(0): Backing store enabled
+[    51.684] (==) NVIDIA(0): Silken mouse enabled
+[    51.684] (==) NVIDIA(0): DPMS enabled
+[    51.684] (II) Loading sub module "dri2"
+[    51.684] (II) LoadModule: "dri2"
+[    51.684] (II) Module "dri2" already built-in
+[    51.684] (II) NVIDIA(0): [DRI2] Setup complete
+[    51.684] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[    51.684] (II) Initializing extension Generic Event Extension
+[    51.685] (II) Initializing extension SHAPE
+[    51.685] (II) Initializing extension MIT-SHM
+[    51.685] (II) Initializing extension XInputExtension
+[    51.685] (II) Initializing extension XTEST
+[    51.685] (II) Initializing extension BIG-REQUESTS
+[    51.685] (II) Initializing extension SYNC
+[    51.685] (II) Initializing extension XKEYBOARD
+[    51.685] (II) Initializing extension XC-MISC
+[    51.685] (II) Initializing extension SECURITY
+[    51.685] (II) Initializing extension XFIXES
+[    51.685] (II) Initializing extension RENDER
+[    51.685] (II) Initializing extension RANDR
+[    51.686] (II) Initializing extension COMPOSITE
+[    51.686] (II) Initializing extension DAMAGE
+[    51.686] (II) Initializing extension MIT-SCREEN-SAVER
+[    51.686] (II) Initializing extension DOUBLE-BUFFER
+[    51.686] (II) Initializing extension RECORD
+[    51.686] (II) Initializing extension DPMS
+[    51.686] (II) Initializing extension Present
+[    51.686] (II) Initializing extension DRI3
+[    51.686] (II) Initializing extension X-Resource
+[    51.686] (II) Initializing extension XVideo
+[    51.686] (II) Initializing extension XVideo-MotionCompensation
+[    51.686] (II) Initializing extension SELinux
+[    51.686] (II) SELinux: Disabled on system
+[    51.686] (II) Initializing extension GLX
+[    51.686] (II) Initializing extension GLX
+[    51.686] (II) Indirect GLX disabled.
+[    51.686] (II) GLX: Another vendor is already registered for screen 0
+[    51.686] (II) Initializing extension XFree86-VidModeExtension
+[    51.686] (II) Initializing extension XFree86-DGA
+[    51.687] (II) Initializing extension XFree86-DRI
+[    51.687] (II) Initializing extension DRI2
+[    51.687] (II) Initializing extension NV-GLX
+[    51.687] (II) Initializing extension NV-CONTROL
+[    51.687] (II) Initializing extension XINERAMA
+[    51.739] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[    51.739] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    51.739] (II) LoadModule: "libinput"
+[    51.739] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    51.740] (II) Module libinput: vendor="X.Org Foundation"
+[    51.740] 	compiled for 1.21.1.11, module version = 1.4.0
+[    51.740] 	Module class: X.Org XInput Driver
+[    51.740] 	ABI class: X.Org XInput driver, version 24.4
+[    51.740] (II) Using input driver 'libinput' for 'Power Button'
+[    51.740] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 39 paused 0
+[    51.740] (**) Power Button: always reports core events
+[    51.740] (**) Option "Device" "/dev/input/event2"
+[    51.742] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    51.742] (II) event2  - Power Button: device is a keyboard
+[    51.742] (II) event2  - Power Button: device removed
+[    51.742] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[    51.742] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    51.742] (**) Option "xkb_model" "pc105"
+[    51.742] (**) Option "xkb_layout" "latam"
+[    51.754] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    51.754] (II) event2  - Power Button: device is a keyboard
+[    51.755] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    51.755] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    51.755] (II) Using input driver 'libinput' for 'Power Button'
+[    51.755] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 42 paused 0
+[    51.755] (**) Power Button: always reports core events
+[    51.755] (**) Option "Device" "/dev/input/event1"
+[    51.756] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    51.756] (II) event1  - Power Button: device is a keyboard
+[    51.756] (II) event1  - Power Button: device removed
+[    51.756] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[    51.756] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[    51.756] (**) Option "xkb_model" "pc105"
+[    51.756] (**) Option "xkb_layout" "latam"
+[    51.757] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    51.757] (II) event1  - Power Button: device is a keyboard
+[    51.758] (II) config/udev: Adding input device Sleep Button (/dev/input/event0)
+[    51.758] (**) Sleep Button: Applying InputClass "libinput keyboard catchall"
+[    51.758] (II) Using input driver 'libinput' for 'Sleep Button'
+[    51.758] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 43 paused 0
+[    51.758] (**) Sleep Button: always reports core events
+[    51.758] (**) Option "Device" "/dev/input/event0"
+[    51.759] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[    51.759] (II) event0  - Sleep Button: device is a keyboard
+[    51.759] (II) event0  - Sleep Button: device removed
+[    51.759] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0/event0"
+[    51.759] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 8)
+[    51.759] (**) Option "xkb_model" "pc105"
+[    51.759] (**) Option "xkb_layout" "latam"
+[    51.760] (II) event0  - Sleep Button: is tagged by udev as: Keyboard
+[    51.760] (II) event0  - Sleep Button: device is a keyboard
+[    51.761] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event17)
+[    51.761] (II) No input driver specified, ignoring this device.
+[    51.761] (II) This device may have been added with another device file.
+[    51.761] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event18)
+[    51.761] (II) No input driver specified, ignoring this device.
+[    51.761] (II) This device may have been added with another device file.
+[    51.761] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event19)
+[    51.761] (II) No input driver specified, ignoring this device.
+[    51.761] (II) This device may have been added with another device file.
+[    51.762] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event20)
+[    51.762] (II) No input driver specified, ignoring this device.
+[    51.762] (II) This device may have been added with another device file.
+[    51.762] (II) config/udev: Adding input device Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control (/dev/input/event9)
+[    51.762] (**) Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    51.762] (II) Using input driver 'libinput' for 'Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control'
+[    51.763] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 44 paused 0
+[    51.763] (**) Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control: always reports core events
+[    51.763] (**) Option "Device" "/dev/input/event9"
+[    51.764] (II) event9  - Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control: is tagged by udev as: Keyboard
+[    51.764] (II) event9  - Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control: device is a keyboard
+[    51.764] (II) event9  - Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control: device removed
+[    51.764] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.3/0003:0951:1709.0006/input/input12/event9"
+[    51.764] (II) XINPUT: Adding extended input device "Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control" (type: KEYBOARD, id 9)
+[    51.764] (**) Option "xkb_model" "pc105"
+[    51.764] (**) Option "xkb_layout" "latam"
+[    51.766] (II) event9  - Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control: is tagged by udev as: Keyboard
+[    51.766] (II) event9  - Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control: device is a keyboard
+[    51.766] (II) config/udev: Adding input device Kingston HyperX Cloud Stinger Core + 7.1 (/dev/input/event10)
+[    51.766] (II) No input driver specified, ignoring this device.
+[    51.766] (II) This device may have been added with another device file.
+[    51.767] (II) config/udev: Adding input device Logitech G PRO Gaming Mouse (/dev/input/event3)
+[    51.767] (**) Logitech G PRO Gaming Mouse: Applying InputClass "libinput pointer catchall"
+[    51.767] (II) Using input driver 'libinput' for 'Logitech G PRO Gaming Mouse'
+[    51.768] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 45 paused 0
+[    51.768] (**) Logitech G PRO Gaming Mouse: always reports core events
+[    51.768] (**) Option "Device" "/dev/input/event3"
+[    51.769] (II) event3  - Logitech G PRO Gaming Mouse: is tagged by udev as: Mouse
+[    51.769] (II) event3  - Logitech G PRO Gaming Mouse: device is a pointer
+[    51.769] (II) event3  - Logitech G PRO Gaming Mouse: device removed
+[    51.769] (II) libinput: Logitech G PRO Gaming Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    51.769] (II) libinput: Logitech G PRO Gaming Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    51.769] (II) libinput: Logitech G PRO Gaming Mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    51.769] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.0/0003:046D:C08C.0001/input/input3/event3"
+[    51.769] (II) XINPUT: Adding extended input device "Logitech G PRO Gaming Mouse" (type: MOUSE, id 10)
+[    51.769] (**) Option "AccelerationScheme" "none"
+[    51.769] (**) Logitech G PRO Gaming Mouse: (accel) selected scheme none/0
+[    51.769] (**) Logitech G PRO Gaming Mouse: (accel) acceleration factor: 2.000
+[    51.769] (**) Logitech G PRO Gaming Mouse: (accel) acceleration threshold: 4
+[    51.770] (II) event3  - Logitech G PRO Gaming Mouse: is tagged by udev as: Mouse
+[    51.770] (II) event3  - Logitech G PRO Gaming Mouse: device is a pointer
+[    51.771] (II) config/udev: Adding input device Logitech G PRO Gaming Mouse (/dev/input/mouse0)
+[    51.771] (II) No input driver specified, ignoring this device.
+[    51.771] (II) This device may have been added with another device file.
+[    51.772] (II) config/udev: Adding input device Logitech G PRO Gaming Mouse Keyboard (/dev/input/event4)
+[    51.772] (**) Logitech G PRO Gaming Mouse Keyboard: Applying InputClass "libinput keyboard catchall"
+[    51.772] (II) Using input driver 'libinput' for 'Logitech G PRO Gaming Mouse Keyboard'
+[    51.772] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 46 paused 0
+[    51.772] (**) Logitech G PRO Gaming Mouse Keyboard: always reports core events
+[    51.772] (**) Option "Device" "/dev/input/event4"
+[    51.774] (II) event4  - Logitech G PRO Gaming Mouse Keyboard: is tagged by udev as: Keyboard
+[    51.774] (II) event4  - Logitech G PRO Gaming Mouse Keyboard: device is a keyboard
+[    51.774] (II) event4  - Logitech G PRO Gaming Mouse Keyboard: device removed
+[    51.774] (II) libinput: Logitech G PRO Gaming Mouse Keyboard: needs a virtual subdevice
+[    51.774] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.1/0003:046D:C08C.0002/input/input4/event4"
+[    51.774] (II) XINPUT: Adding extended input device "Logitech G PRO Gaming Mouse Keyboard" (type: MOUSE, id 11)
+[    51.774] (**) Option "AccelerationScheme" "none"
+[    51.774] (**) Logitech G PRO Gaming Mouse Keyboard: (accel) selected scheme none/0
+[    51.774] (**) Logitech G PRO Gaming Mouse Keyboard: (accel) acceleration factor: 2.000
+[    51.774] (**) Logitech G PRO Gaming Mouse Keyboard: (accel) acceleration threshold: 4
+[    51.775] (II) event4  - Logitech G PRO Gaming Mouse Keyboard: is tagged by udev as: Keyboard
+[    51.775] (II) event4  - Logitech G PRO Gaming Mouse Keyboard: device is a keyboard
+[    51.776] (II) config/udev: Adding input device HyperX Alloy Elite HyperX Alloy Elite (/dev/input/event5)
+[    51.776] (**) HyperX Alloy Elite HyperX Alloy Elite: Applying InputClass "libinput keyboard catchall"
+[    51.776] (II) Using input driver 'libinput' for 'HyperX Alloy Elite HyperX Alloy Elite'
+[    51.777] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 47 paused 0
+[    51.777] (**) HyperX Alloy Elite HyperX Alloy Elite: always reports core events
+[    51.777] (**) Option "Device" "/dev/input/event5"
+[    51.778] (II) event5  - HyperX Alloy Elite HyperX Alloy Elite: is tagged by udev as: Keyboard
+[    51.778] (II) event5  - HyperX Alloy Elite HyperX Alloy Elite: device is a keyboard
+[    51.778] (II) event5  - HyperX Alloy Elite HyperX Alloy Elite: device removed
+[    51.778] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:0951:16BF.0003/input/input7/event5"
+[    51.778] (II) XINPUT: Adding extended input device "HyperX Alloy Elite HyperX Alloy Elite" (type: KEYBOARD, id 12)
+[    51.778] (**) Option "xkb_model" "pc105"
+[    51.778] (**) Option "xkb_layout" "latam"
+[    51.779] (II) event5  - HyperX Alloy Elite HyperX Alloy Elite: is tagged by udev as: Keyboard
+[    51.779] (II) event5  - HyperX Alloy Elite HyperX Alloy Elite: device is a keyboard
+[    51.780] (II) config/udev: Adding input device HyperX Alloy Elite HyperX Alloy Elite Keyboard (/dev/input/event8)
+[    51.780] (**) HyperX Alloy Elite HyperX Alloy Elite Keyboard: Applying InputClass "libinput keyboard catchall"
+[    51.780] (II) Using input driver 'libinput' for 'HyperX Alloy Elite HyperX Alloy Elite Keyboard'
+[    51.781] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 48 paused 0
+[    51.781] (**) HyperX Alloy Elite HyperX Alloy Elite Keyboard: always reports core events
+[    51.781] (**) Option "Device" "/dev/input/event8"
+[    51.782] (II) event8  - HyperX Alloy Elite HyperX Alloy Elite Keyboard: is tagged by udev as: Keyboard
+[    51.782] (II) event8  - HyperX Alloy Elite HyperX Alloy Elite Keyboard: device is a keyboard
+[    51.782] (II) event8  - HyperX Alloy Elite HyperX Alloy Elite Keyboard: device removed
+[    51.782] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:0951:16BF.0004/input/input11/event8"
+[    51.782] (II) XINPUT: Adding extended input device "HyperX Alloy Elite HyperX Alloy Elite Keyboard" (type: KEYBOARD, id 13)
+[    51.782] (**) Option "xkb_model" "pc105"
+[    51.782] (**) Option "xkb_layout" "latam"
+[    51.784] (II) event8  - HyperX Alloy Elite HyperX Alloy Elite Keyboard: is tagged by udev as: Keyboard
+[    51.784] (II) event8  - HyperX Alloy Elite HyperX Alloy Elite Keyboard: device is a keyboard
+[    51.785] (II) config/udev: Adding input device HyperX Alloy Elite HyperX Alloy Elite System Control (/dev/input/event6)
+[    51.785] (**) HyperX Alloy Elite HyperX Alloy Elite System Control: Applying InputClass "libinput keyboard catchall"
+[    51.785] (II) Using input driver 'libinput' for 'HyperX Alloy Elite HyperX Alloy Elite System Control'
+[    51.785] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 49 paused 0
+[    51.785] (**) HyperX Alloy Elite HyperX Alloy Elite System Control: always reports core events
+[    51.785] (**) Option "Device" "/dev/input/event6"
+[    51.786] (II) event6  - HyperX Alloy Elite HyperX Alloy Elite System Control: is tagged by udev as: Keyboard
+[    51.786] (II) event6  - HyperX Alloy Elite HyperX Alloy Elite System Control: device is a keyboard
+[    51.786] (II) event6  - HyperX Alloy Elite HyperX Alloy Elite System Control: device removed
+[    51.786] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:0951:16BF.0004/input/input8/event6"
+[    51.786] (II) XINPUT: Adding extended input device "HyperX Alloy Elite HyperX Alloy Elite System Control" (type: KEYBOARD, id 14)
+[    51.786] (**) Option "xkb_model" "pc105"
+[    51.786] (**) Option "xkb_layout" "latam"
+[    51.788] (II) event6  - HyperX Alloy Elite HyperX Alloy Elite System Control: is tagged by udev as: Keyboard
+[    51.788] (II) event6  - HyperX Alloy Elite HyperX Alloy Elite System Control: device is a keyboard
+[    51.789] (II) config/udev: Adding input device HyperX Alloy Elite HyperX Alloy Elite Consumer Control (/dev/input/event7)
+[    51.789] (**) HyperX Alloy Elite HyperX Alloy Elite Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    51.789] (II) Using input driver 'libinput' for 'HyperX Alloy Elite HyperX Alloy Elite Consumer Control'
+[    51.789] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 50 paused 0
+[    51.789] (**) HyperX Alloy Elite HyperX Alloy Elite Consumer Control: always reports core events
+[    51.789] (**) Option "Device" "/dev/input/event7"
+[    51.790] (II) event7  - HyperX Alloy Elite HyperX Alloy Elite Consumer Control: is tagged by udev as: Keyboard
+[    51.790] (II) event7  - HyperX Alloy Elite HyperX Alloy Elite Consumer Control: device is a keyboard
+[    51.791] (II) event7  - HyperX Alloy Elite HyperX Alloy Elite Consumer Control: device removed
+[    51.791] (II) libinput: HyperX Alloy Elite HyperX Alloy Elite Consumer Control: needs a virtual subdevice
+[    51.791] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:0951:16BF.0004/input/input9/event7"
+[    51.791] (II) XINPUT: Adding extended input device "HyperX Alloy Elite HyperX Alloy Elite Consumer Control" (type: MOUSE, id 15)
+[    51.791] (**) Option "AccelerationScheme" "none"
+[    51.791] (**) HyperX Alloy Elite HyperX Alloy Elite Consumer Control: (accel) selected scheme none/0
+[    51.791] (**) HyperX Alloy Elite HyperX Alloy Elite Consumer Control: (accel) acceleration factor: 2.000
+[    51.791] (**) HyperX Alloy Elite HyperX Alloy Elite Consumer Control: (accel) acceleration threshold: 4
+[    51.792] (II) event7  - HyperX Alloy Elite HyperX Alloy Elite Consumer Control: is tagged by udev as: Keyboard
+[    51.792] (II) event7  - HyperX Alloy Elite HyperX Alloy Elite Consumer Control: device is a keyboard
+[    51.792] (II) config/udev: Adding input device HDA Intel PCH Rear Mic (/dev/input/event12)
+[    51.792] (II) No input driver specified, ignoring this device.
+[    51.792] (II) This device may have been added with another device file.
+[    51.793] (II) config/udev: Adding input device HDA Intel PCH Front Mic (/dev/input/event13)
+[    51.793] (II) No input driver specified, ignoring this device.
+[    51.793] (II) This device may have been added with another device file.
+[    51.793] (II) config/udev: Adding input device HDA Intel PCH Line (/dev/input/event14)
+[    51.793] (II) No input driver specified, ignoring this device.
+[    51.793] (II) This device may have been added with another device file.
+[    51.793] (II) config/udev: Adding input device HDA Intel PCH Line Out (/dev/input/event15)
+[    51.793] (II) No input driver specified, ignoring this device.
+[    51.793] (II) This device may have been added with another device file.
+[    51.794] (II) config/udev: Adding input device HDA Intel PCH Front Headphone (/dev/input/event16)
+[    51.794] (II) No input driver specified, ignoring this device.
+[    51.794] (II) This device may have been added with another device file.
+[    51.794] (II) config/udev: Adding input device Eee PC WMI hotkeys (/dev/input/event11)
+[    51.794] (**) Eee PC WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[    51.794] (II) Using input driver 'libinput' for 'Eee PC WMI hotkeys'
+[    51.795] (II) systemd-logind: got fd for /dev/input/event11 13:75 fd 51 paused 0
+[    51.795] (**) Eee PC WMI hotkeys: always reports core events
+[    51.795] (**) Option "Device" "/dev/input/event11"
+[    51.795] (II) event11 - Eee PC WMI hotkeys: is tagged by udev as: Keyboard
+[    51.795] (II) event11 - Eee PC WMI hotkeys: device is a keyboard
+[    51.795] (II) event11 - Eee PC WMI hotkeys: device removed
+[    51.795] (**) Option "config_info" "udev:/sys/devices/platform/eeepc-wmi/input/input14/event11"
+[    51.795] (II) XINPUT: Adding extended input device "Eee PC WMI hotkeys" (type: KEYBOARD, id 16)
+[    51.795] (**) Option "xkb_model" "pc105"
+[    51.795] (**) Option "xkb_layout" "latam"
+[    51.796] (II) event11 - Eee PC WMI hotkeys: is tagged by udev as: Keyboard
+[    51.796] (II) event11 - Eee PC WMI hotkeys: device is a keyboard
+[    51.803] (**) Logitech G PRO Gaming Mouse Keyboard: Applying InputClass "libinput keyboard catchall"
+[    51.803] (II) Using input driver 'libinput' for 'Logitech G PRO Gaming Mouse Keyboard'
+[    51.803] (II) systemd-logind: returning pre-existing fd for /dev/input/event4 13:68
+[    51.803] (**) Logitech G PRO Gaming Mouse Keyboard: always reports core events
+[    51.803] (**) Option "Device" "/dev/input/event4"
+[    51.803] (II) libinput: Logitech G PRO Gaming Mouse Keyboard: is a virtual subdevice
+[    51.803] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.1/0003:046D:C08C.0002/input/input4/event4"
+[    51.803] (II) XINPUT: Adding extended input device "Logitech G PRO Gaming Mouse Keyboard" (type: KEYBOARD, id 17)
+[    51.803] (**) Option "xkb_model" "pc105"
+[    51.803] (**) Option "xkb_layout" "latam"
+[    51.803] (**) HyperX Alloy Elite HyperX Alloy Elite Consumer Control: Applying InputClass "libinput keyboard catchall"
+[    51.803] (II) Using input driver 'libinput' for 'HyperX Alloy Elite HyperX Alloy Elite Consumer Control'
+[    51.803] (II) systemd-logind: returning pre-existing fd for /dev/input/event7 13:71
+[    51.803] (**) HyperX Alloy Elite HyperX Alloy Elite Consumer Control: always reports core events
+[    51.803] (**) Option "Device" "/dev/input/event7"
+[    51.803] (II) libinput: HyperX Alloy Elite HyperX Alloy Elite Consumer Control: is a virtual subdevice
+[    51.803] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.1/0003:0951:16BF.0004/input/input9/event7"
+[    51.803] (II) XINPUT: Adding extended input device "HyperX Alloy Elite HyperX Alloy Elite Consumer Control" (type: KEYBOARD, id 18)
+[    51.803] (**) Option "xkb_model" "pc105"
+[    51.803] (**) Option "xkb_layout" "latam"
+[    53.268] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    53.268] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[    53.268] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[    53.268] (--) NVIDIA(GPU-0): 
+[    53.268] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    53.268] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    53.268] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    53.268] (--) NVIDIA(GPU-0): 
+[    53.268] (--) NVIDIA(GPU-0): LG Electronics LG ULTRAGEAR (DFP-2): connected
+[    53.268] (--) NVIDIA(GPU-0): LG Electronics LG ULTRAGEAR (DFP-2): Internal DisplayPort
+[    53.268] (--) NVIDIA(GPU-0): LG Electronics LG ULTRAGEAR (DFP-2): 2660.0 MHz maximum pixel clock
+[    53.268] (--) NVIDIA(GPU-0): 
+[    53.271] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    53.271] (--) NVIDIA(GPU-0): DFP-3: Internal TMDS
+[    53.271] (--) NVIDIA(GPU-0): DFP-3: 165.0 MHz maximum pixel clock
+[    53.271] (--) NVIDIA(GPU-0): 
+[    53.271] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    53.271] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    53.271] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    53.271] (--) NVIDIA(GPU-0): 
+[    53.271] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    53.271] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    53.271] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[    53.271] (--) NVIDIA(GPU-0): 
+[    53.271] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    53.271] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    53.271] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    53.271] (--) NVIDIA(GPU-0): 
+[    53.580] (--) NVIDIA(GPU-0): DFP-0: disconnected
+[    53.580] (--) NVIDIA(GPU-0): DFP-0: Internal DisplayPort
+[    53.580] (--) NVIDIA(GPU-0): DFP-0: 2660.0 MHz maximum pixel clock
+[    53.580] (--) NVIDIA(GPU-0): 
+[    53.581] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    53.581] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    53.581] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    53.581] (--) NVIDIA(GPU-0): 
+[    53.581] (--) NVIDIA(GPU-0): LG Electronics LG ULTRAGEAR (DFP-2): connected
+[    53.581] (--) NVIDIA(GPU-0): LG Electronics LG ULTRAGEAR (DFP-2): Internal DisplayPort
+[    53.581] (--) NVIDIA(GPU-0): LG Electronics LG ULTRAGEAR (DFP-2): 2660.0 MHz maximum pixel clock
+[    53.581] (--) NVIDIA(GPU-0): 
+[    53.583] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    53.583] (--) NVIDIA(GPU-0): DFP-3: Internal TMDS
+[    53.583] (--) NVIDIA(GPU-0): DFP-3: 165.0 MHz maximum pixel clock
+[    53.583] (--) NVIDIA(GPU-0): 
+[    53.583] (--) NVIDIA(GPU-0): DFP-4: disconnected
+[    53.583] (--) NVIDIA(GPU-0): DFP-4: Internal TMDS
+[    53.583] (--) NVIDIA(GPU-0): DFP-4: 165.0 MHz maximum pixel clock
+[    53.583] (--) NVIDIA(GPU-0): 
+[    53.583] (--) NVIDIA(GPU-0): DFP-5: disconnected
+[    53.583] (--) NVIDIA(GPU-0): DFP-5: Internal DisplayPort
+[    53.583] (--) NVIDIA(GPU-0): DFP-5: 2660.0 MHz maximum pixel clock
+[    53.583] (--) NVIDIA(GPU-0): 
+[    53.583] (--) NVIDIA(GPU-0): DFP-6: disconnected
+[    53.583] (--) NVIDIA(GPU-0): DFP-6: Internal TMDS
+[    53.583] (--) NVIDIA(GPU-0): DFP-6: 165.0 MHz maximum pixel clock
+[    53.583] (--) NVIDIA(GPU-0): 
+[  2350.082] (**) Option "fd" "39"
+[  2350.082] (II) event2  - Power Button: device removed
+[  2350.082] (**) Option "fd" "42"
+[  2350.082] (II) event1  - Power Button: device removed
+[  2350.082] (**) Option "fd" "43"
+[  2350.082] (II) event0  - Sleep Button: device removed
+[  2350.082] (**) Option "fd" "44"
+[  2350.082] (II) event9  - Kingston HyperX Cloud Stinger Core + 7.1 Consumer Control: device removed
+[  2350.082] (**) Option "fd" "45"
+[  2350.082] (II) event3  - Logitech G PRO Gaming Mouse: device removed
+[  2350.082] (**) Option "fd" "46"
+[  2350.082] (**) Option "fd" "47"
+[  2350.082] (II) event5  - HyperX Alloy Elite HyperX Alloy Elite: device removed
+[  2350.082] (**) Option "fd" "48"
+[  2350.082] (II) event8  - HyperX Alloy Elite HyperX Alloy Elite Keyboard: device removed
+[  2350.082] (**) Option "fd" "49"
+[  2350.082] (II) event6  - HyperX Alloy Elite HyperX Alloy Elite System Control: device removed
+[  2350.082] (**) Option "fd" "50"
+[  2350.082] (**) Option "fd" "51"
+[  2350.082] (II) event11 - Eee PC WMI hotkeys: device removed
+[  2350.082] (**) Option "fd" "46"
+[  2350.082] (II) event4  - Logitech G PRO Gaming Mouse Keyboard: device removed
+[  2350.082] (**) Option "fd" "50"
+[  2350.082] (II) event7  - HyperX Alloy Elite HyperX Alloy Elite Consumer Control: device removed
+[  2350.083] (II) UnloadModule: "libinput"
+[  2350.083] (II) systemd-logind: not releasing fd for 13:71, still in use
+[  2350.083] (II) UnloadModule: "libinput"
+[  2350.083] (II) systemd-logind: not releasing fd for 13:68, still in use
+[  2350.083] (II) UnloadModule: "libinput"
+[  2350.083] (II) systemd-logind: releasing fd for 13:75
+[  2350.100] (II) UnloadModule: "libinput"
+[  2350.100] (II) systemd-logind: releasing fd for 13:71
+[  2350.138] (II) UnloadModule: "libinput"
+[  2350.138] (II) systemd-logind: releasing fd for 13:70
+[  2350.140] (II) UnloadModule: "libinput"
+[  2350.140] (II) systemd-logind: releasing fd for 13:72
+[  2350.141] (II) UnloadModule: "libinput"
+[  2350.141] (II) systemd-logind: releasing fd for 13:69
+[  2350.141] (II) UnloadModule: "libinput"
+[  2350.141] (II) systemd-logind: releasing fd for 13:68
+[  2350.141] (II) UnloadModule: "libinput"
+[  2350.141] (II) systemd-logind: releasing fd for 13:67
+[  2350.141] (II) UnloadModule: "libinput"
+[  2350.141] (II) systemd-logind: releasing fd for 13:73
+[  2350.142] (II) UnloadModule: "libinput"
+[  2350.142] (II) systemd-logind: releasing fd for 13:64
+[  2350.142] (II) UnloadModule: "libinput"
+[  2350.142] (II) systemd-logind: releasing fd for 13:65
+[  2350.142] (II) UnloadModule: "libinput"
+[  2350.142] (II) systemd-logind: releasing fd for 13:66
+[  2350.264] (II) NVIDIA(GPU-0): Deleting GPU-0
+[  2350.410] (WW) xf86CloseConsole: KDSETMODE failed: Input/output error
+[  2350.411] (WW) xf86CloseConsole: VT_GETMODE failed: Input/output error
+[  2350.413] (II) Server terminated successfully (0). Closing log file.

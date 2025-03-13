@@ -1,0 +1,261 @@
+(function (material, $) {
+    let cas = {
+        init: function () {
+            cas.attachFields();
+            material.autoInit();
+        },
+        attachFields: function () {
+            let divs = document.querySelectorAll('.mdc-text-field'),
+                field;
+            let div;
+            for (i = 0; i < divs.length; ++i) {
+                div = divs[i];
+                field = material.textField.MDCTextField.attachTo(div);
+                if (div.classList.contains('caps-check')) {
+                    field.foundation.adapter.registerInputInteractionHandler('keypress', cas.checkCaps);
+                }
+            }
+            let selector = document.querySelector('.mdc-select.authn-source');
+            if (selector != null) {
+                const select = new material.select.MDCSelect(selector);
+                select.listen('MDCSelect:change', function () {
+                    $('#source').val(select.value);
+                });
+                $('#source').val(select.value);
+            }
+        },
+        checkCaps: function (ev) {
+            let s = String.fromCharCode(ev.which);
+            if (s.toUpperCase() === s && s.toLowerCase() !== s && !ev.shiftKey) {
+                ev.target.parentElement.classList.add('caps-on');
+            } else {
+                console.log('caps off')
+                ev.target.parentElement.classList.remove('caps-on');
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        cas.init();
+    });
+})(mdc, jQuery);
+
+function randomWord() {
+    let things = ["admiring", "adoring", "affectionate", "agitated", "amazing",
+        "angry", "awesome", "beautiful", "blissful", "bold", "boring",
+        "brave", "busy", "charming", "clever", "cool", "compassionate", "competent",
+        "confident", "dazzling", "determined", "sweet", "sad", "silly",
+        "relaxed", "romantic", "sad", "serene", "sharp", "quirky", "scared",
+        "sleepy", "stoic", "strange", "suspicious", "sweet", "tender", "thirsty",
+        "trusting", "unruffled", "upbeat", "vibrant", "vigilant", "vigorous",
+        "wizardly", "wonderful", "youthful", "zealous", "zen"]
+
+    let names = ["austin", "borg", "bohr", "wozniak", "bose", "wu", "wing", "wilson",
+        "boyd", "guss", "jobs", "hawking", "hertz", "ford", "solomon", "spence",
+        "turing", "torvalds", "morse", "ford", "penicillin", "lovelace", "davinci",
+        "darwin", "buck", "brown", "benz", "boss", "allen", "gates", "bose",
+        "edison", "einstein", "feynman", "ferman", "franklin", "lincoln", "jefferson",
+        "mandela", "gandhi", "curie", "newton", "tesla", "faraday", "bell",
+        "aristotle", "hubble", "nobel", "pascal", "washington", "galileo"]
+
+    let n1 = things[Math.floor(Math.random() * things.length)];
+    let n2 = names[Math.floor(Math.random() * names.length)];
+    return `${n1}_${n2}`
+}
+
+function copyClipboard(element) {
+    element.select();
+    element.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+}
+
+function isValidURL(str) {
+    let pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+        '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+        '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+        '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+    return !!pattern.test(str);
+}
+
+function requestGeoPosition() {
+    // console.log('Requesting GeoLocation data from the browser...');
+    if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(showGeoPosition, logGeoLocationError,
+            {maximumAge: 600000, timeout: 8000, enableHighAccuracy: true});
+    } else {
+        console.log('Browser does not support Geo Location');
+    }
+}
+
+function logGeoLocationError(error) {
+    switch (error.code) {
+        case error.PERMISSION_DENIED:
+            console.log('User denied the request for GeoLocation.');
+            break;
+        case error.POSITION_UNAVAILABLE:
+            console.log('Location information is unavailable.');
+            break;
+        case error.TIMEOUT:
+            console.log('The request to get user location timed out.');
+            break;
+        default:
+            console.log('An unknown error occurred.');
+            break;
+    }
+}
+
+function showGeoPosition(position) {
+    let loc = `${position.coords.latitude},${position.coords.longitude},${position.coords.accuracy},${position.timestamp}`;
+    console.log(`Tracking geolocation for ${loc}`);
+    $('[name="geolocation"]').val(loc);
+}
+
+
+function preserveAnchorTagOnForm() {
+    $('#fm1').submit(function () {
+        let location = self.document.location;
+        let hash = decodeURIComponent(location.hash);
+
+        if (hash != undefined && hash != '' && hash.indexOf('#') === -1) {
+            hash = `#${hash}`;
+        }
+
+        let action = $('#fm1').attr('action');
+        if (action == undefined) {
+            action = location.href;
+        } else {
+            let qidx = location.href.indexOf('?');
+            if (qidx != -1) {
+                let queryParams = location.href.substring(qidx);
+                action += queryParams;
+            }
+        }
+        action += hash;
+        $('#fm1').attr('action', action);
+
+    });
+}
+
+/**
+ * Commented, because we disable the button only if submit was hitted and the domain is correct
+ * 
+ * @see templates/framtens/loginform.html
+ *
+    function preventFormResubmission() {
+        $('form').submit(function () {
+            $(':submit').attr('disabled', true);
+            let altText = $(':submit').attr('data-processing-text');
+            if (altText) {
+                $(':submit').attr('value', altText);
+            }
+            return true;
+        });
+    }
+*/
+
+function writeToSessionStorage(value) {
+    if (typeof(Storage) !== "undefined") {
+        window.sessionStorage.removeItem("sessionStorage");
+        window.sessionStorage.setItem('sessionStorage', value);
+        console.log(`Stored ${value} in session storage`);
+    } else {
+        console.log("Browser does not support session storage for write-ops");
+    }
+}
+
+function readFromSessionStorage() {
+    if (typeof(Storage) !== "undefined") {
+        let sessionStorage = window.sessionStorage.getItem("sessionStorage");
+        console.log(`Read ${sessionStorage} in session storage`);
+        window.localStorage.removeItem("sessionStorage");
+        return sessionStorage;
+    } else {
+        console.log("Browser does not support session storage for read-ops");
+    }
+    return null;
+}
+
+function resourceLoadedSuccessfully() {
+
+    $(document).ready(function () {
+
+        if (trackGeoLocation) {
+            requestGeoPosition();
+        }
+
+        if ($(':focus').length === 0) {
+            $('input:visible:enabled:first').focus();
+        }
+
+        preserveAnchorTagOnForm();
+        preventFormResubmission();
+        $('#fm1 input[name="username"],[name="password"]').trigger('input');
+        $('#fm1 input[name="username"]').focus();
+
+        let $revealpassword = $('.reveal-password');
+        $revealpassword.mousedown(function (ev) {
+            if($('.pwd').attr('type')!='text') {
+                $('.pwd').attr('type', 'text');
+                $(".reveal-password-icon").removeClass("mdi mdi-eye").addClass("mdi mdi-eye-off");
+            } else {
+                $('.pwd').attr('type', 'password');
+                $(".reveal-password-icon").removeClass("mdi mdi-eye-off").addClass("mdi mdi-eye");
+            }
+            ev.preventDefault();
+        });
+
+        if (typeof (jqueryReady) == 'function') {
+            jqueryReady();
+        }
+    });
+
+}
+
+/**
+ * Toggle password field between hidden and plaintext.
+ * @author  AgustÃ­n Ezequiel Pereyra, UNC
+ */
+togglePassword = function(elementId) {
+    const x = document.getElementById(elementId);
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+
+YÒíÎ%      gÐ4gÐ4Gö"`gÑ…‰   P    O^partitionKey=%28https%2Cunc.edu.ar%29,:https://autenticar.unc.edu.ar/js/cas.js strongly-framed 1 security-info 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 request-method GET request-accept-encoding gzip, deflate, br, zstd response-head HTTP/1.1 200 
+Server: Tengine
+Date: Tue, 11 Mar 2025 13:00:58 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 8015
+requestId: 61f72dc8-f775-4fe9-a632-569af9efba01
+pod: apereo-cas-cas-server-2
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Vary: origin,access-control-request-method,access-control-request-headers,accept-encoding
+Last-Modified: Wed, 12 Feb 2025 13:44:14 GMT
+Cache-Control: max-age=86400
+Accept-Ranges: bytes
+Front-End-Https: on
+ original-response-headers Server: Tengine
+Date: Tue, 11 Mar 2025 13:00:58 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 8015
+Set-Cookie: autenticar-unc-cookie=1741698059.622.86563.856752|fdaa5e9fcbed2c9c9cbe4fe5585c3c4c; Path=/; HttpOnly; SameSite=None
+requestId: 61f72dc8-f775-4fe9-a632-569af9efba01
+pod: apereo-cas-cas-server-2
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Vary: origin,access-control-request-method,access-control-request-headers,accept-encoding
+Last-Modified: Wed, 12 Feb 2025 13:44:14 GMT
+Cache-Control: max-age=86400
+Accept-Ranges: bytes
+Front-End-Https: on
+ ctid 2 uncompressed-len 0 net-response-time-onstart 1160 net-response-time-onstop 1166   O
