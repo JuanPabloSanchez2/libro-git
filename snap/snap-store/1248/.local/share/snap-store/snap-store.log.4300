@@ -1,8 +1,0 @@
-2025-03-11 10:05:56.701678 ERROR main: Error propagated to top-level
-	String: cannot perform the following tasks:
-- Download snap "code" (186) from channel "latest/stable" (the download has been cancelled: context canceled)
-
-2025-03-11 10:05:56.843267 ERROR main: Error propagated to top-level
-	String: cannot perform the following tasks:
-- Download snap "code" (186) from channel "latest/stable" (the download has been cancelled: context canceled)
-
